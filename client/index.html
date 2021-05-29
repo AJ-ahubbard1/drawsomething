@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="pencil.png" type="image/png" sizes="16x16">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Draw Something</title>
+
+</head>
+<body>
+  <section class="vh-100">
+    <div class ="container h-100">     
+      <div id="gameScreen" class="h-100">
+        <div class="d-flex flex-column align-items-center justify-content-center h-100">
+          <form class="form-select-lg"> 
+            <label for="size">Brush size</label>
+            <input type="range" id="size" name="size" min="2" max="40">
+          </form>
+          <form class="form-select-lg">
+            <label for="red">R</label>
+            <input type="range" id="red" name="red" min="0" max="255">
+            <label for="green">G</label>
+            <input type="range" id="green" name="green" min="0" max="255">
+            <label for="blue">B</label>
+            <input type="range" id="blue" name="blue" min="0" max="255">
+          </form>
+          <canvas id="canvas"></canvas>
+          <button id="undo">UNDO</button>
+        </div>
+      </div>
+    </div>
+  </section> 
+  <!--<script src="/socket.io/socket.io.js"></script> -->
+  <script src="index.js"></script>
+</body>
+</html>

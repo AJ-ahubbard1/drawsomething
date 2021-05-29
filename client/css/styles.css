@@ -1,0 +1,7 @@
+body {
+  background-color:cyan;
+}
+
+#canvas {
+  outline: 3px solid black;
+}
